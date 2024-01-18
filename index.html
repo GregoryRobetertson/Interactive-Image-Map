@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Map Example</title>
+  </head>
+  <body>
+    <!-- Image with map and areas -->
+    <img src="your_image.jpg" alt="Interactive Image" usemap="#imageMap" />
+
+    <!-- Map setup -->
+    <map name="imageMap">
+      <!-- TV area -->
+      <area shape="rect" coords="150,250,250,350" alt="TV" href="tv.html" />
+
+      <!-- PS5 console area -->
+      <area
+        shape="rect"
+        coords="255,250,355,350"
+        alt="PS5 console"
+        href="ps5console.html"
+      />
+
+      <!-- Controller area at the bottom of TV and PS5 console -->
+      <area
+        shape="circle"
+        coords="305,380,44"
+        alt="Controller"
+        href="controller.html"
+      />
+    </map>
+  </body>
+</html>
